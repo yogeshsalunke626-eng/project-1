@@ -12,7 +12,7 @@ function App() {
 
   async function generateResponse() {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/generate", {
+      const res = await axios.post("https://mini-gemini-z4g3.onrender.com/generate", {
         prompt: prompt,
       })
       console.log(res.data.response)
